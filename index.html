@@ -6,15 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Js Toggle</title>
     <link rel="stylesheet" href="style.css">
-    <script rel="text/javascript" src="/jquery-3.4.1.min.js"></script>
-    <script rel="text/javascript" src="main.js"></script>
 </head>
 <body>
-    <div class="box-contaner">
-        <div id="box" class="class1" onclick="toggleClass(this)"></div>
-        <div id="box" class="class1" onclick="toggleClass(this)"></div>
-        <div id="box" class="class1" onclick="toggleClass(this)"></div>
-        <div id="box" class="class1" onclick="toggleClass(this)"></div>
+    <div class="loader" id="loader">
+        <div class="loading-cube-container">
+            <div class="cube1"></div>
+            <div class="cube2"></div>
+        </div>
     </div>
+    <div class="box-contaner">
+        <div class="box off-state" onclick="toggleClass(this)"><div class="circle circle-green"></div></div>
+        <div class="box off-state" onclick="toggleClass(this)"><div class="circle circle-green"></div></div>
+        <div class="box off-state" onclick="toggleClass(this)"><div class="circle circle-green"></div></div>
+        <div class="box off-state" onclick="toggleClass(this)"><div class="circle circle-green"></div></div>
+    </div>
+    
+    <script rel="text/javascript" src="main.js"></script>
 </body>
 </html>
